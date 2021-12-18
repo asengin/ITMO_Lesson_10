@@ -64,9 +64,9 @@ namespace _1_Angle
             Sec = sec;
         }
 
-        public double ToRadians()
+        public double ToRadians() //Требуется ли здесь указывать аргументы ?
         {
-            double radians = (Grad + Min / 60 + Sec / 3600) * Math.PI / 180;
+            double radians = (Grad + Min / 60 + Sec / 3600) * Math.PI / 180; //К чему лучше обращаться, свойствам или полям?
             return radians;
         }
     }
